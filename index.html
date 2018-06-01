@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+  <link rel='stylesheet prefetch' href='css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+      <script  src="js/index.js"></script>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <div class="container" >
+  <div class='row head'>
+    <div class='col-sm-4 col-sm-offset-4' style="background:white;">
+        <div class='caption'>
+            <h4 class='lead text-center '>Request More Information</h4>
+            <form method='post' action="/" onsubmit="myFunction()" role="form">
+            <div style='color:red;' id='error'></div>
+            <div class="form-group">
+                <label for="degree">What degree type would you like*</label>
+                <select class="form-control" id="degree" name='degree' onchange="Degree(this.value)">
+                    <option>Select</option>
+                    <option>Associate's degree</option>
+                    <option>Bachelor's degree</option>
+                    <option>Master's degree</option>
+                    <option>Doctoral degree</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="sel1">What would you like to study*</label>
+                <select class="form-control" id="study" name='study' style='background:lightgray;' >
+                    <option>Select degree type above</option>
+                    <option>Research</option>
+                    <option>Analytics</option>
+                    <option>Business Management</option>
+                    <option>Intern Programme</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <div class='row'>
+                    <div class='col-xs-6' style='padding-right:5px;'>
+                        <label for="fname">First Name*</label>
+                        <input type="text" id='fname' name='fname' class="form-control">
+                    </div>
+                    <div class='col-xs-6' style='padding-left:0px;'>
+                        <label for="lname">Last Name*</label>
+                        <input type="text" id='lname' name='email' class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email*</label>
+                <input type="text" class="form-control" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="tel">Telephone*</label>
+                <input type="text" class="form-control" id="tel" name="tel">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Address*</label>
+                <input type="text" class="form-control" id="address" name="address">
+            </div>
+            <div class='form-group'> 
+                <button type="submit" class="btn btn-primary btn-lg btn-block">Tell Me More</button>
+            </div>
+            <p class='small text-justify'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <p class='small text-justify'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,  It has survived not only five centuries. .</p>
+            <div>
+                <p class="heading"><span> Or</span></p> 
+            </div>
+            <div class='form-group'> 
+                <button type="submit" class="btn btn-success btn-lg btn-block" onclick='return validate()'>Apply Now</button>
+            </div>
+        </form>
+      </div>
+      
+    </div>
+   
+  </div>
+</div>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
+<script src='js/bootstrap.min.js'></script>
+
+  
+
+    
+
+
+
+
+</body>
+
+</html>
